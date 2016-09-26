@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class Greeting {
 
+
+    //you can't write  the data without mentioing @ResponseBody here.
+    //You might see a possible error like Whitelabel Error Page
+
+
     @RequestMapping("/")
     private @ResponseBody String greeting(){
         return "Hello";
